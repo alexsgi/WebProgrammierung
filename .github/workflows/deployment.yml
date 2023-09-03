@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: bash /home/alex/skripte/deployment.sh 2>&1 | tee "home/alex/logs/deployment/deploy_log_$(date +"%Y-%m-%d_%T").txt"
+        script: bash /home/alex/skripte/deployment.sh 2>&1 | tee "/home/alex/logs/deployment/deploy_log_$(date +"%Y-%m-%d_%T").txt"
