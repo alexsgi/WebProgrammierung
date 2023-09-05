@@ -17,6 +17,91 @@ html {
   line-height: 1.4;
 }
 
+/* Stil für die Überschrift */
+.center-heading {
+  font-size: 85px; /*Schriftgröße'*/
+  text-align: left; /* Text in der Mitte ausrichten */
+  font-weight: bold; /* Fettstil hinzufügen */
+  font-family: "AkayaTelivigala", sans-serif; /*Überschriftart */
+  color: #005A58;
+  margin-top: 130px; /*Abstand nach oben*/
+  margin-left: 70px; /*Abstand nach Links*/
+}
+
+/* Stil für die Navbar */
+header {
+  background-color: #fbe89f; /* Hintergrundfarbe der Navbar anpassen */
+  color: #005A58; /* Textfarbe anpassen */
+  padding: 20px 0; /* Innenabstand anpassen */
+  text-align: right; /* Text rechtsbündig ausrichten */
+  margin-right: 80px; /*Abstand nach rechts*/
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+/* Stil für die Liste der Reiter */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stil für einzelne Reiter */
+.navbar li {
+  display: inline; /* Reiter nebeneinander anordnen */
+  margin-right: 30px; /* Abstand zwischen den Reitern anpassen */
+  padding-left: 0; /* Link-Innenabstand zurücksetzen */
+  list-style: none; /* Listenpunkte entfernen */
+}
+
+/* Stil für Reiterlinks */
+.navbar a {
+  text-decoration: none;
+  color: #005A58; /* Textfarbe der Links anpassen */
+  font-family: "AkayaTelivigala", sans-serif; /* Schriftart festlegen */
+
+}
+
+/* Hervorhebung des aktuellen Reiters (optional) */
+.navbar a:hover {
+  transform: scale(1.1); /* Vergrößern um 10% beim Hover */
+  font-weight: bold; /* Fettstil beim Hover */
+  font-size: 18px; /* Schriftgröße zurücksetzen (wichtig) */
+}
+
+/* Stil für die rechtsbündige Linie */
+.line {
+  width: 1000px; /* Länge der Linie anpassen */
+  height: 1.5px; /* Dicke der Linie anpassen */
+  color: #005A58;
+  background-color: #005A58; /* Linienfarbe anpassen */
+  position: absolute; /* Positionierung relativ zum nächstgelegenen positionierten Elternelement (navbar) */
+  top: 14%; /*Obere Position auf 50% des Elternelements (navbar) setzen */
+  right: 0; /* Rechtsbündig ausrichten */
+
+
+}
+
+/* Stil für das Logo */
+.logo {
+  width: 200px; /* Breite des Logos anpassen */
+  height: auto; /* Automatische Höhe beibehalten, um das Seitenverhältnis beizubehalten */
+  position: absolute; /* Positionierung relativ zum Elternelement (header) */
+  top: 10px; /* Obere Position anpassen (10px vom oberen Rand entfernt) */
+  left: 10px; /* Linke Position anpassen (10px vom linken Rand entfernt) */
+}
+/* Stil für das große Burger-Bild */
+.burger {
+  width: 500px; /* Breite des Burger-Bildes anpassen */
+  height: auto; /* Automatische Höhe beibehalten, um das Seitenverhältnis beizubehalten */
+  position: absolute; /* Positionierung relativ zum Elternelement (body) */
+  top: 160px; /* Abstand vom oberen Rand anpassen (100px Abstand) */
+  right: 120px; /* Abstand vom rechten Rand anpassen (100px Abstand) */
+  border-top-left-radius: 120px; /* Radius für obere linke Ecke anpassen */
+  border-bottom-right-radius: 120px; /* Radius für untere rechte Ecke anpassen */
+}
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
