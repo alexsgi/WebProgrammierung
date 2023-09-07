@@ -1,348 +1,169 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
+body {
+  font-family: 'Akaya Telivigala', cursive;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* Stil für die Überschrift */
-.center-heading {
-  font-size: 85px; /*Schriftgröße'*/
-  text-align: left; /* Text in der Mitte ausrichten */
-  font-weight: bold; /* Fettstil hinzufügen */
-  font-family: "AkayaTelivigala", sans-serif; /*Überschriftart */
-  color: #005A58;
-  margin-top: 130px; /*Abstand nach oben*/
-  margin-left: 70px; /*Abstand nach Links*/
-}
-
-/* Stil für die Navbar */
+/* Header Styles */
 header {
-  background-color: #fbe89f; /* Hintergrundfarbe der Navbar anpassen */
-  color: #005A58; /* Textfarbe anpassen */
-  padding: 20px 0; /* Innenabstand anpassen */
-  text-align: right; /* Text rechtsbündig ausrichten */
-  margin-right: 80px; /*Abstand nach rechts*/
+  background-color: #fbe89f;
+  color: #005A58;
+  padding: 20px 0;
+  text-align: right;
+  margin-right: 80px;
   margin-top: 40px;
   font-size: 20px;
 }
 
-/* Stil für die Liste der Reiter */
+/* Navigation Styles */
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* Stil für einzelne Reiter */
 .navbar li {
-  display: inline; /* Reiter nebeneinander anordnen */
-  margin-right: 30px; /* Abstand zwischen den Reitern anpassen */
-  padding-left: 0; /* Link-Innenabstand zurücksetzen */
-  list-style: none; /* Listenpunkte entfernen */
+  display: inline;
+  margin-right: 50px;
+  padding-left: 0;
+  list-style: none;
 }
 
-/* Stil für Reiterlinks */
 .navbar a {
   text-decoration: none;
-  color: #005A58; /* Textfarbe der Links anpassen */
-  font-family: "AkayaTelivigala", sans-serif; /* Schriftart festlegen */
-
-}
-
-/* Hervorhebung des aktuellen Reiters (optional) */
-.navbar a:hover {
-  transform: scale(1.1); /* Vergrößern um 10% beim Hover */
-  font-weight: bold; /* Fettstil beim Hover */
-  font-size: 18px; /* Schriftgröße zurücksetzen (wichtig) */
-}
-
-/* Stil für die rechtsbündige Linie */
-.line {
-  width: 1000px; /* Länge der Linie anpassen */
-  height: 1.5px; /* Dicke der Linie anpassen */
   color: #005A58;
-  background-color: #005A58; /* Linienfarbe anpassen */
-  position: absolute; /* Positionierung relativ zum nächstgelegenen positionierten Elternelement (navbar) */
-  top: 14%; /*Obere Position auf 50% des Elternelements (navbar) setzen */
-  right: 0; /* Rechtsbündig ausrichten */
-
-
+  font-family: 'Akaya Telivigala', cursive;
 }
 
-/* Stil für das Logo */
-.logo {
-  width: 200px; /* Breite des Logos anpassen */
-  height: auto; /* Automatische Höhe beibehalten, um das Seitenverhältnis beizubehalten */
-  position: absolute; /* Positionierung relativ zum Elternelement (header) */
-  top: 10px; /* Obere Position anpassen (10px vom oberen Rand entfernt) */
-  left: 10px; /* Linke Position anpassen (10px vom linken Rand entfernt) */
-}
-/* Stil für das große Burger-Bild */
-.burger {
-  width: 500px; /* Breite des Burger-Bildes anpassen */
-  height: auto; /* Automatische Höhe beibehalten, um das Seitenverhältnis beizubehalten */
-  position: absolute; /* Positionierung relativ zum Elternelement (body) */
-  top: 160px; /* Abstand vom oberen Rand anpassen (100px Abstand) */
-  right: 120px; /* Abstand vom rechten Rand anpassen (100px Abstand) */
-  border-top-left-radius: 120px; /* Radius für obere linke Ecke anpassen */
-  border-bottom-right-radius: 120px; /* Radius für untere rechte Ecke anpassen */
+.navbar a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  font-size: 18px;
 }
 
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+/* Horizontal Line Styles */
+.line {
+  width: 1000px;
+  height: 1.5px;
+  color: #005A58;
+  background-color: #005A58;
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  top: 14%;
+  right: 0;
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
+/* Logo Styles */
+.logo {
+  width: 200px;
   height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+/* Main Heading Styles */
+.center-heading {
+  font-size: 110px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #005A58;
+  margin-top: 130px;
+  margin-left: 80px;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
+/* Subheading Styles */
+.unterschrift {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #005A58;
+  margin-top: -50px !important;
+  margin-left: 80px;
 }
 
-.clearfix::after {
-  clear: both;
+.text1 {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #005A58;
+  margin-top: -10px;
+  margin-left: 80px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.arrow {
+  width: 450px;
+  height: auto;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -90px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.drops {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -30px;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* Slideshow Styles */
+.slideshow-container {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 160px;
+  right: 120px;
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+}
+.text {
+  color: #005A58;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #005A58;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading Animation */
+.active {
+  background-color: #fbe89f;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  to {
+    opacity: 1;
   }
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
