@@ -1,0 +1,68 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akaya Telivigala', cursive;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Header Styles */
+header {
+    background-color: #fbe89f;
+    color: #005A58;
+    padding: 20px 0;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 50px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #005A58;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Horizontal Line Styles */
+.line {
+    width: 1000px;
+    height: 1.5px;
+    color: #005A58;
+    background-color: #005A58;
+    position: absolute;
+    top: 14%;
+    right: 0;
+}
+
+/* Logo Styles */
+.logo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
