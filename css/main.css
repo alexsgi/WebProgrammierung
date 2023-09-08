@@ -134,14 +134,6 @@ header {
   text-align: center;
 }
 
-.numbertext {
-  color: #005A58;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* Fading Animation */
 .active {
   background-color: #fbe89f;
