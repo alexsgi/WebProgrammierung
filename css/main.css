@@ -159,3 +159,12 @@ header {
     font-size: 11px;
   }
 }
+.footer {
+  background-color: #005A58;
+  color: #fbe89f;
+  text-align: center;
+  padding: 3px;
+  position: fixed; /* Fixiert den Footer am unteren Rand */
+  bottom: 0; /* Setzt den Footer an die untere Seite */
+  width: 100%; /* Füllt die gesamte Breite des Viewports */
+}
