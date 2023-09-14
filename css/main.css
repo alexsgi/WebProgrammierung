@@ -173,6 +173,15 @@ header {
 }
 
 /* Speisekarte */
+
+h1, h2 {
+  color: #005A58;
+}
+
+ul, li {
+  color: #005A58;
+}
+
 /* Stil für das Menücontainer */
 .menu-container {
   display: flex;
