@@ -171,3 +171,36 @@ header {
   width: 100%; /* Füllt die gesamte Breite des Viewports */
 
 }
+
+/* Speisekarte */
+/* Stil für das Menücontainer */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Stil für das Menüelement */
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  border: none; /* Rahmen entfernen */
+  text-align: left; /* Links ausrichten */
+}
+
+/* Stil für das Bildcontainer */
+#image-container {
+  margin-right: 100px;
+  width: 300px; /* Breite des Bildcontainers anpassen */
+}
+
+/* Stil für das Bild */
+#menu-image {
+  max-width: 125%; /* Bildgröße anpassen */
+  margin-left:1000px;
+  margin-top:-410px;
+  display: none;
+  border-radius: 200px;
+}
+/* Speisekarte Ende*/
