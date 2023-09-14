@@ -8,9 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
             menuImage.src = imageName;
             menuImage.style.display = 'block';
         });
-
-        menuItem.addEventListener('mouseout', function () {
-            menuImage.style.display = 'none';
-        });
     });
 });
