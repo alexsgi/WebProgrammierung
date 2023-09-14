@@ -69,13 +69,13 @@ header {
 
 /* Main Heading Styles */
 .center-heading {
-  font-size: 110px;
+  font-size: 50px;
   text-align: left;
   font-weight: bold;
   font-family: 'Akaya Telivigala', cursive;
   color: #005A58;
-  margin-top: 130px;
-  margin-left: 80px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 /* Subheading Styles */
@@ -213,3 +213,8 @@ ul, li {
   border-radius: 200px;
 }
 /* Speisekarte Ende*/
+
+/* CreateYourBugBurger */
+.paragraph {
+  margin-left: 20px;
+}
