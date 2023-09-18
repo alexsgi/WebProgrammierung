@@ -198,6 +198,19 @@ ul, li {
   text-align: left; /* Links ausrichten */
 }
 
+/* Stil für das Menüelement */
+.menu-item-plain {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+  border: none; /* Rahmen entfernen */
+  text-align: left; /* Links ausrichten */
+}
+
+.titel2 {
+  margin: 10px;
+}
+
 /* Stil für das Bildcontainer */
 #image-container {
   margin-right: 100px;
